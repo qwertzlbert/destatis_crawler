@@ -6,10 +6,18 @@ The output you can use for further processing.
 
 
 ##Requirements
-To get this work you just need to install the scrapy framework via pip (pip install scrapy), your favorite package manager or directly via the scrapy GitHub reposetory (https://github.com/scrapy/scrapy)
+To get this work you just need to install the scrapy framework via pip (pip install scrapy), your favorite package manager or directly via the [Scrapy GitHub reposetory](https://github.com/scrapy/scrapy)
 
 
 ##How to
-To run the crawler you just need to enter the command: scrapy crawl destatis 
-To get a csv output enter the command: scrapy crawl destatis -o output.csv
-For json output: scrapy crawl destatis -o output.json
+To run the crawler you just need to enter the command: 
+
+```scrapy crawl destatis```
+
+To get a csv output enter the command: 
+
+  ```scrapy crawl destatis -o output.csv```
+  
+For json output: 
+
+  ```scrapy crawl destatis -o output.json```
