@@ -2,7 +2,7 @@
 Just a simple crawler to get a full index of destatis (Federal Statistical Office of Germany) statistics to use for further processing 
 
 This is just a basic crawler to get a full list of all statistics of the Destatis Genesis database. 
-The output you can use for further processing. 
+You can use the output for further processing. 
 
 
 ##Requirements
