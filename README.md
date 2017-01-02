@@ -6,7 +6,7 @@ You can use the output for further processing.
 
 
 ##Requirements
-To get this work you just need to install the scrapy framework via pip (pip install scrapy), your favorite package manager or directly via the [Scrapy GitHub reposetory](https://github.com/scrapy/scrapy)
+To get this work you just need to install the scrapy framework via pip (`pip install scrapy`), your favorite package manager or directly via the [Scrapy GitHub repository](https://github.com/scrapy/scrapy)
 
 
 ##How to
