@@ -21,3 +21,6 @@ To get a csv output enter the command:
 For json output: 
 
   ```scrapy crawl destatis -o output.json```
+
+##Limits
+With this little tool it's only possible to get an index of the data available on Destatis. Direct download links are not possible, because the downloadlinks rely on a session id which will decay after a short time. However you could use this index with the provided overview links to download some data "on demand" with an additional crawler or some other tool. 
