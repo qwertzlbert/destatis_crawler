@@ -4,13 +4,13 @@ from scrapy.utils.project import get_project_settings
 
 
 class scrapy_handler:
-'''class to handle the scrapy spiders and make the outputs available for
-further processing.'''
+    '''class to handle the scrapy spiders and make the outputs available for
+    further processing.'''
     
     items = []
     
     def get_list():
-    '''calls the destatis spider to collect all statistics'''
+        '''calls the destatis spider to collect all statistics'''
     
         process = CrawlerProcess(get_project_settings())
         process.crawl('destatis')
@@ -20,8 +20,8 @@ further processing.'''
         return scrapy_handler.items
     
     def download_csv(url):
-    '''calls the destatis downloadlink crawler to get the direct download
-    links'''
+        '''calls the destatis downloadlink crawler to get the direct download
+        links'''
     
         process = CrawlerProcess(get_project_settings())
         process.crawl('destatis-download', url=url)
