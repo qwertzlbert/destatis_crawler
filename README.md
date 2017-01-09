@@ -22,5 +22,7 @@ For json output:
 
   ```scrapy crawl destatis -o output.json```
 
-##Limits
-With this little tool it's only possible to get an index of the data available on Destatis. Direct download links are not possible, because the downloadlinks rely on a session id which will decay after a short time. However you could use this index with the provided overview links to download some data "on demand" with an additional crawler or some other tool. 
+##Handler
+With the scrapy_handler class inside scrapy_handler.py you can call the scrapy spider and receive a dict of the links (either the full list of all stats or the direct download link) which you can use for further processing, without the need to read the output from another file.
+
+call `get_list()` to receive a list of all stats and `download_csv(url)` with the URL of a statistic overview page as argument to receive the direct download link.
