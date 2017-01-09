@@ -8,7 +8,12 @@
 import scrapy
 
 
-class DestatisScrapyItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class DestatisAvailable(scrapy.Item):
+    title = scrapy.Field()
+    ID = scrapy.Field()
+    url = scrapy.Field()
+    last_updated = scrapy.Field()
+    
+class DestatisDownloadUrls(scrapy.Item):
+    csv = scrapy.Field()
+    html = scrapy.Field()

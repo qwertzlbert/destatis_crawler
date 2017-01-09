@@ -1,2 +1,6 @@
 # virtualenv
 venv/
+
+#pycache
+*pyo
+*pyc
